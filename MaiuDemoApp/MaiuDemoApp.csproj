@@ -49,6 +49,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\facebook.png" />
+	  <None Remove="Resources\Images\maconet.jpg" />
 	  <None Remove="Resources\Images\plus_64.svg" />
 	</ItemGroup>
 
@@ -58,6 +60,9 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="FlyoutPageDemo.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="GridLayoutDemo.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="MinhaPagina.xaml">
