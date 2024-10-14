@@ -3,10 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MaiuDemoApp.StackLayoutDemo"
              Title="StackLayoutDemo">
-    <StackLayout>
-        <Label 
-            Text="Texto 1" FontSize="20"
-            BackgroundColor="Yellow"
-            />
-    </StackLayout>
+
+    <VerticalStackLayout Margin="20" HorizontalOptions="Start">
+        <HorizontalStackLayout VerticalOptions="Start">
+            <Label Text="Nome"></Label>
+            <Entry WidthRequest="150" HeightRequest="30"></Entry>
+        <Label Text="Informe o nome" TextColor="Red"></Label>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout VerticalOptions="Start">
+            <Label Text="Idade"></Label>
+            <Entry WidthRequest="150" HeightRequest="30"></Entry>
+            <Label Text="Informe a idade" TextColor="Red"></Label>
+        </HorizontalStackLayout>
+
+    </VerticalStackLayout>
 </ContentPage>
